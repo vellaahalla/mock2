@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Exam 2</title>
+</head>
+<style>
+     table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+</style>
+<body>
+    <!-- No 1  -->
+    <div id="type">
+        <button onclick="showType1()">Type 1</button>
+        <button onclick="showType2()">Type 2</button>
+    </div>
+    <div id="resultType"></div>
+    
+
+    <hr>
+    <br>
+
+    <!-- No 2 -->
+    <div id="todoList">
+        <h4>Kegiatan Selama Pandemi</h4>
+        <div id="dataInput">
+            <input type="date" id="inputDate" value="2020-09-20">
+            <input type="time" id="inputTime">
+            <input type="text" id="inputEvent" placeholder="Masukkan Jenis Kegiatan" value="Makan">
+            <input type="text" id="inputImage" placeholder="Masukkan Image Path Location" value="https://d1bpj0tv6vfxyp.cloudfront.net/Hari_Gizi_Nasional,_Inilah_Pola_Makan_Bergizi_untuk_Si_Kecil_Halodoc.jpg">
+            <input type="button" value="Tambah" onclick="addEvent()">
+        </div>
+        <br>
+        <!-- RENDER -->
+            <table id="myTable">
+                <thead>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Jam</th>
+                    <th>Kegiatan</th>
+                    <th>Lokasi</th>
+                    <th colspan="2">Setting</th>
+                </thead>
+                <tbody id="renderTable"></tbody>
+            </table>
+    </div>
+     <br>
+     <hr>
+    <!-- No 3 -->
+    <input type="text" placeholder="Masukkan Kalimat" id="inputSentence">
+    <input type="button" value="OK" onclick=addSentence()>
+    <div id="renderResult"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
